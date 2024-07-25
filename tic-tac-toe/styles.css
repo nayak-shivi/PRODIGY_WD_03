@@ -1,0 +1,71 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('game.png'); /* Replace 'game.png' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    color: #fff; /* White text color for container content */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px); /* Increase cell size for better visibility */
+    grid-gap: 10px; /* Increase gap between cells */
+    margin-top: 30px; /* Adjust margin for spacing */
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #fff; /* White background color */
+    border: 2px solid #ccc; /* Light gray border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px; /* Larger font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.cell:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+
+.status {
+    margin-top: 30px; /* Adjust margin for spacing */
+    font-size: 24px; /* Larger font size for status */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #fff; /* White text color */
+}
+
+.status span {
+    color: #fff; /* White text color */
+}
+
+.restart-btn {
+    margin-top: 30px; /* Adjust margin for spacing */
+    padding: 12px 24px; /* Slightly larger padding */
+    font-size: 18px; /* Larger font size for button text */
+    font-weight: bold; /* Bold text for button */
+    color: #fff; /* White text color */
+    background-color: #2196F3; /* Blue background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.restart-btn:hover {
+    background-color: #0d8cec; /* Darker blue on hover */
+}
